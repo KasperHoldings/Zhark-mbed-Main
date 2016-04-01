@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\main.o"
+".\system_lpc17xx.o"
+--nodebug --strict --scatter ".\Main_board.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Main_board.map" -o .\Main_board.axf
